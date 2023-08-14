@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Comparison Calculator</title>
+</head>
+<body>
+    <h1>Paper Comparison Calculator</h1>
+    <label for="paperType">Choose Paper Format:</label>
+    <select id="paperType">
+        <option value="standardSheets">Standard Australian Sheet Sizes</option>
+        <!-- Other options will go here -->
+    </select>
+
+    <!-- Standard Australian Sheet Sizes Inputs -->
+    <div id="standardSheets">
+        <label for="standardSheetFormat">Select Standard Sheet Format (A1-A5):</label>
+        <select id="standardSheetFormat">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <!-- Other sizes will go here -->
+        </select>
+        <label for="standardSheetQuantity">Enter Quantity of Standard Sheets:</label>
+        <input type="number" id="standardSheetQuantity">
+        <label for="standardSheetPrice">Enter Price per Standard Sheet:</label>
+        <input type="number" id="standardSheetPrice">
+    </div>
+
+    <!-- Other input sections will go here -->
+<!-- Custom Dimension Sheets Inputs -->
+<div id="customSheets">
+    <label for="sheetWidth">Enter Sheet Width (mm):</label>
+    <input type="number" id="sheetWidth">
+    <label for="sheetHeight">Enter Sheet Height (mm):</label>
+    <input type="number" id="sheetHeight">
+    <label for="customSheetQuantity">Enter Sheet Quantity:</label>
+    <input type="number" id="customSheetQuantity">
+    <label for="customSheetPrice">Enter Price per Sheet:</label>
+    <input type="number" id="customSheetPrice">
+</div>
+
+<!-- Standard Australian Ream Sizes Inputs -->
+<div id="standardReams">
+    <label for="standardReamFormat">Select Standard Ream Format (A1-A5):</label>
+    <select id="standardReamFormat">
+        <option value="A1">A1</option>
+        <!-- Other sizes will go here -->
+    </select>
+    <label for="standardReamQuantity">Enter Quantity of Standard Reams:</label>
+    <input type="number" id="standardReamQuantity">
+    <label for="standardReamPrice">Enter Price per Standard Ream:</label>
+    <input type="number" id="standardReamPrice">
+</div>
+
+<!-- Paper Rolls Inputs -->
+<div id="paperRolls">
+    <label for="rollWidth">Enter Roll Width (mm):</label>
+    <input type="number" id="rollWidth">
+    <label for="rollLength">Enter Roll Length (mm):</label>
+    <input type="number" id="rollLength">
+    <label for="rollQuantity">Enter Roll Quantity:</label>
+    <input type="number" id="rollQuantity">
+    <label for="rollPrice">Enter Price per Roll:</label>
+    <input type="number" id="rollPrice">
+</div>
+
+<!-- Additional Inputs for GSM, Brand, Line -->
+<div id="additionalInputs">
+    <label for="gsm">Enter GSM:</label>
+    <input type="number" id="gsm">
+    <label for="brand">Select Brand:</label>
+    <input type="text" id="brand">
+    <label for="lineOfPaper">Select Line of Paper:</label>
+    <input type="text" id="lineOfPaper">
+</div>
+
+
+</body>
+</html>
