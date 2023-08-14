@@ -76,16 +76,6 @@
     <input type="text" id="lineOfPaper">
 </div>
 
-<!-- Additional Inputs for GSM, Brand, Line -->
-<div id="additionalInputs">
-    <label for="gsm">Enter GSM:</label>
-    <input type="number" id="gsm">
-    <label for="brand">Select Brand:</label>
-    <input type="text" id="brand">
-    <label for="lineOfPaper">Select Line of Paper:</label>
-    <input type="text" id="lineOfPaper">
-</div>
-
 <button id="calculateButton">Calculate</button>
 <script src="calculator.js"></script>
 </body>
