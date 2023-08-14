@@ -23,22 +23,6 @@ document.getElementById('calculateButton').addEventListener('click', function() 
             var standardSheetFormat = document.getElementById('standardSheetFormat').value;
             var standardSheetQuantity = document.getElementById('standardSheetQuantity').value;
             var standardSheetPrice = document.getElementById('standardSheetPrice').value;
-        case 'customSheets':
-    var sheetWidth = document.getElementById('sheetWidth').value;
-    var sheetHeight = document.getElementById('sheetHeight').value;
-    var customSheetQuantity = document.getElementById('customSheetQuantity').value;
-    var customSheetPrice = document.getElementById('customSheetPrice').value;
-
-    // Calculate the area for the custom sheet size
-    var customSheetArea = sheetWidth * sheetHeight;
-
-    // Calculate total area and total cost
-    var customTotalArea = customSheetArea * customSheetQuantity;
-    var customTotalCost = customSheetPrice * customSheetQuantity;
-
-    // Display the results
-    alert('Total Area: ' + customTotalArea + ', Total Cost: ' + customTotalCost);
-    break;
 
             // Calculate the area for the selected sheet size (e.g., A1)
             var sheetArea = calculateSheetArea(standardSheetFormat);
@@ -49,6 +33,22 @@ document.getElementById('calculateButton').addEventListener('click', function() 
 
             // Display the results
             alert('Total Area: ' + totalArea + ', Total Cost: ' + totalCost);
+            break;
+        case 'customSheets':
+            var sheetWidth = document.getElementById('sheetWidth').value;
+            var sheetHeight = document.getElementById('sheetHeight').value;
+            var customSheetQuantity = document.getElementById('customSheetQuantity').value;
+            var customSheetPrice = document.getElementById('customSheetPrice').value;
+
+            // Calculate the area for the custom sheet size
+            var customSheetArea = sheetWidth * sheetHeight;
+
+            // Calculate total area and total cost
+            var customTotalArea = customSheetArea * customSheetQuantity;
+            var customTotalCost = customSheetPrice * customSheetQuantity;
+
+            // Display the results
+            alert('Total Area: ' + customTotalArea + ', Total Cost: ' + customTotalCost);
             break;
 
         // Other cases for different paper types will go here
