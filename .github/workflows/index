@@ -76,6 +76,6 @@
     <input type="text" id="lineOfPaper">
 </div>
 
-
+<script src="calculator.js"></script>
 </body>
 </html>
